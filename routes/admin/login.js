@@ -12,15 +12,15 @@ router.post('/', async function(req,res,next){
 
     try{
         console.log(req.body);
-        var usuario = req.body.usuario;
+        var usuarios = req.body.usuario;
         var password = req.body.password;
 
-        var data = await usuariosModel.getUserAndPassword(usuario,password);
+        var data = await usuariosModel.getUserAndPassword(usuarios,password);
 
 
         if(data != undefined){
             req.session.id_usuario = data.id;
-            req.session.nombre = data.usuario;
+            req.session.nombre = data.usuarios;
 
             res.redirect('/admin/novedades')
         } else{
