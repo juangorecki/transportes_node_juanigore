@@ -19,4 +19,10 @@ router.get('/agregar',(req,res,next) => {
 
 })
 
+router.post('/agregar', async (req,res,next) =>{
+
+    //console.log(req.body)
+
+})
+
 module.exports = router;

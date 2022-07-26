@@ -1,22 +1,22 @@
 <div class="container margenes">
     <div class="row">
         <div class="col">
-            <form action="admin/novedades/agregar" method="post">
-                <h2 class="agreg">Agregar Novedades</h2>
+            <h2 class="agreg">Agregar Novedades</h2>
+            <form action="/admin/novedades/agregar" method="post"> 
                 <div class="mb-3">
-                    <label class="form-label">Título</label>
+                    <label class="form-label">Titulo</label>
                     <input type="text" class="form-control"  name="titulo">
                 </div>
                 <div class="mb-3">
-                     <label class="form-label">Subtítulo</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="subtitulo"></textarea>
+                     <label class="form-label">Subtitulo</label>
+                    <textarea class="form-control" rows="3" name="subtitulo"></textarea>
                 </div>
                  <div class="mb-3">
                      <label class="form-label">Cuerpo</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="cuerpo"></textarea>
+                    <textarea class="form-control" rows="3" name="cuerpo"></textarea>
                 </div>
                 <div class="col-auto">
-                    <button type="submit" class="btn btn-success">Agregar</button>
+                    <button type="submit" class="btn btn-success">Guardar</button>
                 </div>
             </form>
         </div>
