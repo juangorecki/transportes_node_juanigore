@@ -1,19 +1,9 @@
-   <h2>Novedades</h2>
+   <h2 class="nov-titulo">Novedades :</h2>
+   {{#each novedades}}
         <div>
-            <h3>Titulo</h3>
-            <h4>Subtitulo</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corrupti repellat? Libero praesentium similique voluptatibus, vel animi nesciunt! Nulla saepe aperiam soluta aliquam qui necessitatibus obcaecati dolorem amet laborum consequuntur!</p>
-            <hr/> 
+            <h3>{{titulo}}</h3>
+            <h4>{{subtitulo}}</h4>
+            <p>{{cuerpo}}</p>
+            <hr /> 
         </div>
-        <div>
-            <h3>Titulo</h3>
-            <h4>Subtitulo</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corrupti repellat? Libero praesentium similique voluptatibus, vel animi nesciunt! Nulla saepe aperiam soluta aliquam qui necessitatibus obcaecati dolorem amet laborum consequuntur!</p>
-            <hr/> 
-        </div>
-        <div>
-            <h3>Titulo</h3>
-            <h4>Subtitulo</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, corrupti repellat? Libero praesentium similique voluptatibus, vel animi nesciunt! Nulla saepe aperiam soluta aliquam qui necessitatibus obcaecati dolorem amet laborum consequuntur!</p>
-            <hr/> 
-        </div>
+        {{/each}}
